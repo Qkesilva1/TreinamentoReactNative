@@ -1,6 +1,11 @@
-import React from 'react'
-import { StyleSheet, SafeAreaView} from 'react-native'
-import Pai from './components/relacao/Pai'
+// import ListaProduto from './components/produtos/ListaProdutos'
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+
+
+
+// import Usuario from './components/usuarioLogado'
+// import Pais from './components/relacao/Pai'
+// import Filho from './components/relacao/Filho'
 
 // import ParImpar from './components/ParImpar'
 
@@ -22,13 +27,41 @@ import Texto from './components/Primeiro' */
 // import Estilo from './components/estilo'
 /* import Titulo from './components/Titulo'
 import Botao from './components/Botao' */
+// import DigiteSeuNome from './components/digiteSeuNome/digiteSeuNome'
+// import Quadrado from './components/layout/quadrado'
+// import FlexBoxV1 from './components/layout/FlexBoxV1'
+// import FlexBoxV2 from './components/layout/FlexBoxV2'
+// import FlexBoxV3 from './components/layout/FlexBoxV3'
+// import FlexBoxV4 from './components/layout/FlexBoxV4'
+import React from 'react'
+import { StyleSheet, SafeAreaView} from 'react-native'
+import Mega from './components/mega/Mega'
+
 
 export default () => (
 <SafeAreaView style={style.App}>
 
-    <Pai />
+    <Mega  qtdeNum={`${13}`} />
 
     {/* 
+    <FlexBoxV4 style={style.FlexV4} />
+    <FlexBoxV1 style={style.FlexBoxV1} />
+    <Quadrado />
+    <Quadrado cor='#ff801a' />
+    <Quadrado cor='#50d1f6' />
+    <Quadrado cor='#dd22c1' />
+    <Quadrado cor='#8312ed' />
+    <Quadrado cor='#36c9a7' />
+    <DigiteSeuNome />
+    <ListaProdutosV2 />
+    <Usuario usuario={{nome: 'Cleiton', email:'Cleiton@email.com'}}/>
+    <Usuario usuario={{nome: 'Cleriston'}}/>
+    <Pais>
+        <Filho nome="Rael" sobreNome="Silva Miranda" />
+    </Pais>
+    <Pais>
+        <Filho nome="Noah" sobreNome="Silva" />
+    </Pais>
     <ParImpar num={51653} />
     <Diferenca />
     <Pai/> 
